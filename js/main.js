@@ -2,7 +2,8 @@
 
 // SELECTORS
 const randomNumber = getRandomNumber(100);
-const resetButton = document.querySelector('.js-reset-button');
+
+console.log('Mi número aleatorio es: ', randomNumber);
 
 // show info
 const clueMessage = document.querySelector('.js-clue-message');
@@ -18,28 +19,28 @@ function getRandomNumber(max) {
   return Math.ceil(Math.random() * max);
 }
 
-console.log('Mi número aleatorio es: ', randomNumber);
-
 // handle event
 
 const submitButton = document.querySelector('.js-submitButton');
+const resetButton = document.querySelector('.js-reset-button');
 const inputNumber = document.querySelector('.js-number');
+let clue = document.querySelector('.js-clue');
 
 console.log(number.value);
 
 function handleSubmitButton(event) {
   event.preventDefault();
-  const numberValue = parseInt(number.value);
-  if (numberValue <= 0 || numberValue > 100) {
-    console.log('El número debe ser mayor que 0 y menor que 100');
+  let numberValue = parseInt(number.value);
+  if (numberValue < 1 || numberValue > 100) {
+    clue.innerHTML = 'El número debe ser mayor que 0 y menor que 100';
   } else if (numberValue < randomNumber) {
-    console.log('Demasiado bajo ❄️');
+    clue.innerHTML = 'Demasiado bajo ❄️';
   } else if (numberValue > randomNumber) {
-    console.log('Es mayor 🔥');
+    clue.innerHTML = 'Es mayor 🔥';
   } else if (numberValue === randomNumber) {
-    console.log('🏆 ¡Has ganado campeona! 🏆');
+    clue.innerHTML = '🏆 ¡Has ganado campeona! 🏆';
   } else {
-    console.log('errorrrrrr');
+    clue.innerHTML = 'errorrrrrr';
   }
 }
 
