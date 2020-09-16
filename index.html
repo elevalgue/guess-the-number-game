@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Guess the number game</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link href="./styles/reset.css" rel="stylesheet" />
     <link href="./styles/main.css" rel="stylesheet" />
   </head>
@@ -11,12 +15,21 @@
     <header>
       <h1>Adivina el número</h1>
     </header>
-    <main class="main">
-      <img src="emoji.png" width="512" height="512" alt="emoji pensando" />
+    <main class="container">
+      <!-- <img src="emoji.png" width="512" height="512" alt="emoji pensando" /> -->
       <form action="" class="form">
         <label for="number"></label>
-        <input type="number" id="number" name="number" class="js-number" />
-        <input type="submit" value="Prueba" class="js-submitButton" />
+        <input
+          type="number"
+          id="number"
+          name="number"
+          class="js-number userNumber"
+        />
+        <input
+          type="submit"
+          value="Prueba"
+          class="js-submitButton submitButton"
+        />
       </form>
       <div>
         <p class="js-clue">
