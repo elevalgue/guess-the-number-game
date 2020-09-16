@@ -2,33 +2,28 @@
 
 // SELECTORS
 const randomNumber = getRandomNumber(100);
-
-console.log('Mi número aleatorio es: ', randomNumber);
-
-// show info
+const submitButton = document.querySelector('.js-submitButton');
+const userNumber = document.querySelector('.js-number');
+let clue = document.querySelector('.js-clue');
 const clueMessage = document.querySelector('.js-clue-message');
 const attemptsNumber = document.querySelector('.js-attemptsNumber');
 
 // FUNCTIONS
 
-// generate random number
+// random number generator
 function getRandomNumber(max) {
   return Math.ceil(Math.random() * max);
 }
 
-// handle event
-
-const submitButton = document.querySelector('.js-submitButton');
-const resetButton = document.querySelector('.js-reset-button');
-const userNumber = document.querySelector('.js-number');
-let clue = document.querySelector('.js-clue');
+// HANDLE EVENT
 
 function handleSubmitButton(event) {
   event.preventDefault();
   updateClue();
-  updateAttempts(event);
+  updateAttempts();
 }
 
+// Update clue message
 function updateClue() {
   let userNumber = parseInt(number.value);
   if (userNumber > 100 || userNumber < 1) {
@@ -44,16 +39,13 @@ function updateClue() {
   }
 }
 
-// attempts
+// Increase the number of attempts
 let attempts = 0;
 
-function updateAttempts(event) {
+function updateAttempts() {
   attempts++;
   attemptsNumber.innerHTML = attempts;
 }
 
-console.log('Número de intentos', attempts);
-
-// listeners
-
-submitButton.addEventListener('click', userNumber);
+// LISTENER
+submitButton.addEventListener('click', handleSubmitButton);
