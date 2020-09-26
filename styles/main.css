@@ -8,18 +8,16 @@
   width: 500px;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
-  border-color: 1px solid red;
 }
 
 h1 {
   font-size: 35px;
   color: rgba(0, 0, 0, 0.7);
   text-align: center;
-  margin: 40px 0 10px 0;
 }
 
 .submitButton {
-  background-color: rgb(46, 216, 196);
+  /* background-color: rgb(46, 216, 196); */
   color: white;
   padding: 5px 15px;
   border: none;
