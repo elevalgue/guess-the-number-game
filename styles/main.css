@@ -17,7 +17,7 @@ h1 {
 }
 
 .submitButton {
-  /* background-color: rgb(46, 216, 196); */
+  background-color: rgb(46, 216, 196);
   color: white;
   padding: 5px 15px;
   border: none;
