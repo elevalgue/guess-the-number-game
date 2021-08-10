@@ -9,14 +9,12 @@ const clueMessage = document.querySelector('.js-clue-message');
 const attemptsNumber = document.querySelector('.js-attemptsNumber');
 
 // FUNCTIONS
-
 // random number generator
 function getRandomNumber(max) {
   return Math.ceil(Math.random() * max);
 }
 
 // HANDLE EVENT
-
 function handleSubmitButton(event) {
   event.preventDefault();
   updateClue();
