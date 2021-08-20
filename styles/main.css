@@ -48,15 +48,6 @@ h1 {
   padding-top: 10px;
 }
 
-.clue {
-  color: grey;
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  height: 25px;
-  border-radius: 4px;
-  margin: 20px auto;
-  padding-top: 10px;
-}
-
 .attempts {
   color: grey;
   border: 1px solid rgba(0, 0, 0, 0.3);
