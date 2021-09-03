@@ -1,6 +1,6 @@
 # modulo-2-evaluacion-intermedia-elevalgue
 
-El ejercicio consiste en desarrollar una página web con un juego de # "Adivinar el número".
+El ejercicio consiste en desarrollar una página web con un juego de  __"Adivinar el número"__.
 
 El juego consiste en que el programa genera un número al azar entre 1 y 100, y la jugadora tiene que
 adivinarlo. El juego da pistas sobre si el número que prueba es demasiado alto o bajo, y va contabilizando el
