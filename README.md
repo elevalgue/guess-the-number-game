@@ -1,23 +1,19 @@
 # Guess the number game: Evaluacion intermedia - Módulo 2
 
-El ejercicio consiste en desarrollar una página web con un juego de  __"Adivinar el número"__.
+El ejercicio consiste en desarrollar una página web con un juego de  __"Adivinar el número"__. 🎲
 
-El juego consiste en que el programa genera un número al azar entre 1 y 100, y la jugadora tiene que
-adivinarlo. El juego da pistas sobre si el número que prueba es demasiado alto o bajo, y va contabilizando el
-número de intentos. Hasta que al final la jugadora acierta el número.
+El juego consiste en que el programa genera un número al azar entre 1 y 100, y la jugadora tiene que adivinarlo. El juego da pistas sobre si el número que prueba es demasiado alto o bajo, y va contabilizando elnúmero de intentos. Hasta que al final la jugadora acierta el número.
+
 En la parte superior, la jugadora introduce un número y da al botón de Prueba.
 Debajo, en el apartado de Pista aparecen los siguientes textos:
-Al arrancar la página: Escribe un número y dale a Prueba.
-Cuando la jugadora introduzca un número mayor que el aleatorio y pulse en Prueba: Demasiado
-alto.
-Cuando la jugadora introduzca un número menor que el aleatorio y pulse en Prueba: Demasiado
-bajo.
-Cuando la jugadora introduzca un número igual que el aleatorio y pulse en Prueba: Has ganado
-campeona!!!
-Cuando la jugadora no introduzca un número válido y pulse en Prueba: El número debe estar
-entre 1 y 100.
+Al arrancar la página: Escribe un número y dale a __Prueba__.
+
+- Cuando la jugadora introduzca un número mayor que el aleatorio y pulse en Prueba: Demasiado alto.
+- Cuando la jugadora introduzca un número menor que el aleatorio y pulse en Prueba: Demasiado bajo.
+- Cuando la jugadora introduzca un número igual que el aleatorio y pulse en Prueba: Has ganado campeona!!!
+- Cuando la jugadora no introduzca un número válido y pulse en Prueba: El número debe estarentre 1 y 100.
+
 En la parte inferior debe aparecer el número de veces que se ha pulsado el bóton Prueba.
-Pasos para realizar el juego
 Para realizar una versión sencilla del juego tenemos que realizar las siguientes funcionalidades desde
 JavaScript:
 
