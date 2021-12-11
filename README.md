@@ -1,4 +1,4 @@
-# modulo-2-evaluacion-intermedia-elevalgue
+# Guess the number game: Evaluacion intermedia - Módulo 2
 
 El ejercicio consiste en desarrollar una página web con un juego de  __"Adivinar el número"__.
 
